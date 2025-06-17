@@ -9,7 +9,7 @@ import Game.Levels.Division.L07dvd_ls
 
 World "Prime"
 Level 1
-Title ""
+Title "is_prime2"
 
 TheoremTab "∣"
 
