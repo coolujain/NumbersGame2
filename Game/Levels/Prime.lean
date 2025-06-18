@@ -1,4 +1,7 @@
-import Game.Levels.Prime.twoisprime
+import Game.Levels.Prime.is_prime2
+import Game.Levels.Prime.is_prime_two_v2
+import Game.Levels.Prime.prime_dvd_prime
+import Game.Levels.Prime.prod_prime_not_prime
 
 
 
