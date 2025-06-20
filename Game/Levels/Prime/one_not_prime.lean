@@ -5,7 +5,8 @@ import Game.MyNat.PeanoAxioms
 import Game.Levels.LessOrEqual.L11le_two
 import Game.Levels.Division.L02dvd_refl
 import Game.Levels.Division.L06zero_dvd
-import Game.Levels.Division.L07dvd_ls
+import Game.Levels.Division.L07dvd_le
+
 
 World "Prime"
 Level 4
