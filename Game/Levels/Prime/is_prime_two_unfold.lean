@@ -5,7 +5,7 @@ import Game.MyNat.PeanoAxioms
 import Game.Levels.LessOrEqual.L11le_two
 import Game.Levels.Division.L02dvd_refl
 import Game.Levels.Division.L06zero_dvd
-import Game.Levels.Division.L07dvd_ls
+import Game.Levels.Division.L07dvd_le
 
 World "Prime"
 Level 1
@@ -33,7 +33,7 @@ Statement two_is_prime
   apply le_refl
   intro m hm 
   have h2 : 2 ≠ 0 := succ_ne_zero 1
-  apply dvd_ls m 2 hm at h2 
+  apply dvd_le m 2 hm at h2 
   apply le_two at h2
   cases h2 with hzero hrest
   rw [hzero] at hm
