@@ -6,14 +6,19 @@ import Game.Levels.LessOrEqual.L11le_two
 import Game.Levels.Division.L02dvd_refl
 import Game.Levels.Division.L06zero_dvd
 import Game.Levels.Division.L07dvd_le
+import Game.MyNat.Prime
 
 World "Prime"
 Level 1
 Title ""
 
-TheoremTab "∣"
 
 namespace MyNat
+
+/-- -/
+DefinitionDoc MyNat.prime as "prime"
+
+NewDefinition MyNat.prime
 
 Introduction
 "
@@ -22,8 +27,7 @@ Introduction
 /-- `two_is_prime` is a proof that 2 is prime .-/
 TheoremDoc MyNat.two_is_prime as "two_is_prime" in "∣"
 
-def prime (n :  ℕ) : Prop :=
-  2 <= n ∧ ∀ m, m ∣ n → m = 1 ∨ m = n
+
 
       
 Statement two_is_prime
@@ -42,3 +46,5 @@ Statement two_is_prime
   apply succ_ne_zero at hm
   tauto
   exact hrest
+
+TheoremTab "prime"
