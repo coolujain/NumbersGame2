@@ -25,7 +25,7 @@ Introduction
   In this level, we will prove that 2 is prime.
 "
 /-- `two_is_prime` is a proof that 2 is prime .-/
-TheoremDoc MyNat.two_is_prime as "two_is_prime" in "∣"
+TheoremDoc MyNat.two_is_prime as "two_is_prime" in "prime"
 
 
 
