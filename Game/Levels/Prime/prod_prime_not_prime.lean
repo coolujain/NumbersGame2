@@ -11,7 +11,7 @@ World "Prime"
 Level 3
 Title "prod_prime_not_prime"
 
-TheoremTab "∣"
+TheoremTab "prime"
 
 namespace MyNat
 
