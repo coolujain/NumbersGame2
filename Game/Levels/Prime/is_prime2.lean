@@ -11,7 +11,7 @@ World "Prime"
 Level 1
 Title "is_prime2"
 
-TheoremTab "∣"
+TheoremTab "prime"
 
 namespace MyNat
 
@@ -24,7 +24,7 @@ Introduction
 
       
 /-- `is_prime2 ` is a proof that `2 is a prime number`.-/
-TheoremDoc MyNat.is_prime2 as "is_prime2" in "∣"
+TheoremDoc MyNat.is_prime2 as "is_prime2" in "prime"
 
 Statement is_prime2
     (m : ℕ) : (2 ≤ 2) ∧ ( m ∣ 2 →  m = 1 ∨ m = 2) := by
