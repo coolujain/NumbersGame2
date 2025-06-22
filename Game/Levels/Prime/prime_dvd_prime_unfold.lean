@@ -4,13 +4,14 @@ import Game.Levels.LessOrEqual.L11le_two
 import Game.Levels.LessOrEqual.L01le_refl
 import Game.MyNat.Division
 import Game.MyNat.PeanoAxioms
+import Game.Levels.Prime.is_prime_two_unfold
 
 
 World "Prime"
 Level 2
 Title "prime_dvd_prime"
 
-TheoremTab "∣"
+TheoremTab "prime"
 
 namespace MyNat
 
@@ -20,10 +21,9 @@ Introduction
 
 "
 /-- `prime_dvd_prime ` is a proof that `if a prime number divides another prime, then these two primes are equal`.-/
-TheoremDoc MyNat.prime_dvd_prime as "prime_dvd_prime" in "∣"
+TheoremDoc MyNat.prime_dvd_prime as "prime_dvd_prime" in "prime"
 
-def prime (n :  ℕ) : Prop :=
-  2 <= n ∧ ∀ m, m ∣ n → m = 1 ∨ m = n
+
 
 Statement prime_dvd_prime
     (p q : ℕ)
@@ -44,6 +44,7 @@ Statement prime_dvd_prime
   apply le_zero at h1p
   tauto
   exact h
+
 
 Conclusion
 "
