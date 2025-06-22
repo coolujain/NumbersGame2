@@ -20,7 +20,7 @@ Introduction
   In this level, we will prove that the product of two prime numbers is not prime.
 "
 /-- `two_is_prime` is a proof that 2 is prime .-/
-TheoremDoc MyNat.prod_prime_not_prime as "prod_prime_not_prime" in "∣"
+TheoremDoc MyNat.prod_prime_not_prime as "prod_prime_not_prime" in "prime"
 
 
 Statement prod_prime_not_prime
