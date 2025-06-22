@@ -21,7 +21,7 @@ Introduction
   In this level, we will prove that one is not prime.
 "
 /-- `one_not_prime` is a proof that 1 is not prime .-/
-TheoremDoc MyNat.one_not_prime as "one_not_prime" in "∣"
+TheoremDoc MyNat.one_not_prime as "one_not_prime" in "prime"
 
 
 Statement one_not_prime
