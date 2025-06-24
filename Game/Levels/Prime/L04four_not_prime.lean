@@ -23,15 +23,12 @@ def prime (n :  ℕ) : Prop :=
   2 <= n ∧ ∀ m, m ∣ n → m = 1 ∨ m = n
 
 Statement four_not_prime:
-  ¬ prime 4 := by
+   ¬ (2 ≤ 4 ∧ ∀ (m : ℕ), m ∣ 4 → m = 1 ∨ m = 4) := by
   intro h
-  unfold prime at h
   cases h with h1 h2
-  Hint "prove that (succ 1) divides 4"
   have h3 : (succ 1) ∣ 4 := by
     use (succ 1)
     decide
-  Hint "apply the definition of prime"
   have h4 : (succ 1) = 1 ∨ (succ 1) = 4 :=
     h2 (succ 1) h3
   cases h4 with left right
