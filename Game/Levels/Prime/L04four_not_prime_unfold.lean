@@ -16,13 +16,13 @@ Introduction
   In this level, we will prove that four is not prime.
 
 "
-/-- `not_prime_four ` is a proof that `four is not prime, basically it is the proof that there exists a number other thn four and one that divide four.`.-/
-TheoremDoc MyNat.not_prime_four as "not_prime_four" in "∣"
+/-- `four_not_prime ` is a proof that `four is not prime, basically it is the proof that there exists a number other thn four and one that divide four.`.-/
+TheoremDoc MyNat.four_not_prime as "four_not_prime" in "∣"
 
 def prime (n :  ℕ) : Prop :=
   2 <= n ∧ ∀ m, m ∣ n → m = 1 ∨ m = n
 
-Statement not_prime_four:
+Statement four_not_prime:
   ¬ prime 4 := by
   intro h
   unfold prime at h
