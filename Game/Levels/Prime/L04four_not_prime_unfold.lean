@@ -7,7 +7,7 @@ World "Prime"
 Level 4
 Title "four_not_prime"
 
-TheoremTab "∣"
+TheoremTab "prime"
 
 namespace MyNat
 
@@ -17,7 +17,7 @@ Introduction
 
 "
 /-- `four_not_prime ` is a proof that `four is not prime, basically it is the proof that there exists a number other thn four and one that divide four.`.-/
-TheoremDoc MyNat.four_not_prime as "four_not_prime" in "∣"
+TheoremDoc MyNat.four_not_prime as "four_not_prime" in "prime"
 
 def prime (n :  ℕ) : Prop :=
   2 <= n ∧ ∀ m, m ∣ n → m = 1 ∨ m = n
