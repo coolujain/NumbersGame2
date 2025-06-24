@@ -48,5 +48,5 @@ Statement prime_dvd_prime
 
 Conclusion
 "
-  Congratulations!
+  Well done! This is an important theorem to understand primes.
 "
