@@ -6,7 +6,7 @@ import Game.MyNat.Division
 
 
 World "Prime"
-Level 2
+Level 3
 Title "prime_dvd_prime"
 
 TheoremTab "prime"
