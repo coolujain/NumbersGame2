@@ -8,7 +8,7 @@ import Game.Levels.Prime.is_prime_two_unfold
 
 
 World "Prime"
-Level 2
+Level 3
 Title "prime_dvd_prime"
 
 TheoremTab "prime"
