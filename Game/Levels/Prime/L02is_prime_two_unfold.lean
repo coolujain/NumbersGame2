@@ -9,7 +9,7 @@ import Game.Levels.Division.L07dvd_le
 import Game.MyNat.Prime
 
 World "Prime"
-Level 1
+Level 2
 Title ""
 
 
@@ -29,22 +29,28 @@ TheoremDoc MyNat.two_is_prime as "two_is_prime" in "prime"
 
 
 
-      
-Statement two_is_prime
-   : prime 2 := by
+Statement two_is_prime : prime 2 := by
   unfold prime
+  Hint "Try using constructor to break down the ∧ into two goals"
   constructor
   apply le_refl
-  intro m hm 
+  intro m hm
+  Hint "To continue the proof ,consider what assumptions you would need to be able to apply dvd_le"
   have h2 : 2 ≠ 0 := succ_ne_zero 1
-  apply dvd_le m 2 hm at h2 
+  apply dvd_le m 2 hm at h2
+  Hint "Try applying le_two"
   apply le_two at h2
   cases h2 with hzero hrest
   rw [hzero] at hm
   apply zero_dvd at hm
   rw [two_eq_succ_one] at hm
   apply succ_ne_zero at hm
-  tauto
+  contradiction
   exact hrest
 
 TheoremTab "prime"
+
+Conclusion
+"
+  Congratulations! You have proven that 2 is prime.
+"
