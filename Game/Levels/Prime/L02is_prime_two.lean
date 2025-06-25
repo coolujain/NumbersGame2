@@ -8,7 +8,7 @@ import Game.Levels.Division.L06zero_dvd
 import Game.Levels.Division.L07dvd_le
 
 World "Prime"
-Level 1
+Level 2
 Title "is_prime_two"
 
 TheoremTab "prime"
