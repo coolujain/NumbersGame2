@@ -9,7 +9,7 @@ import Game.Levels.Division.L07dvd_le
 
 
 World "Prime"
-Level 4
+Level 1
 Title "one_not_prime"
 
 TheoremTab "prime"
@@ -28,3 +28,8 @@ Statement one_not_prime
   : (∃ y, y ∣ 1 ∧ y ≠ 1 ∧ y ≠ 1)  ∨ (1<=2) := by
   right
   decide
+
+Conclusion
+"
+  Congratulations! You have proven your first level in prime world.
+"
