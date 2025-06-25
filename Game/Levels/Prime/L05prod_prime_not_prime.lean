@@ -8,7 +8,7 @@ import Game.Levels.Division.L06zero_dvd
 
 
 World "Prime"
-Level 3
+Level 5
 Title "prod_prime_not_prime"
 
 TheoremTab "prime"
@@ -66,3 +66,8 @@ Statement prod_prime_not_prime
   apply zero_ne_succ at hk
   exact hk
   exact h5
+
+Conclusion
+"
+  Congratulations, you have proven the last theorem in prime world!
+"
