@@ -8,7 +8,7 @@ import Game.Levels.Division.L06zero_dvd
 import Game.Levels.Prime.is_prime_two_unfold
 
 World "Prime"
-Level 3
+Level 5
 Title "prod_prime_not_prime"
 
 TheoremTab "prime"
@@ -73,3 +73,8 @@ Statement prod_prime_not_prime
   apply zero_ne_succ at h
   exact h
   exact h6
+
+Conclusion
+"
+  Congratulations, you have proven the last theorem in prime world!
+"
