@@ -12,7 +12,8 @@ Title "Prime World"
 Introduction
 "
   This is the world in which we define prime numbers. We will also prove
-  standard facts about prime numbers.
+  standard facts about prime numbers. The boss level will be proving that the product
+  of two prime numbers is not prime.
 
   The definition of a prime number is that n is prime if \"2 <= n ∧ ∀ m, m ∣ n → m = 1 ∨ m = n\" .
   Click on \"Start\" to proceed.
